@@ -1,0 +1,15 @@
+{
+  "name": "zto-cave-site-mirror",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verbatim static mirror of the ZTO Pepeolithic cave-site, published from dist/",
+  "scripts": {
+    "build": "python3 scripts/mirror.py",
+    "verify": "python3 scripts/mirror.py --verify",
+    "typecheck": "node scripts/check-scripts.mjs",
+    "preview": "python3 -m http.server 4173 --directory dist --bind 127.0.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
